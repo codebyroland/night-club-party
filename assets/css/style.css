@@ -1,11 +1,10 @@
 * {
     padding: 0;
     margin: 0;
-    color: aliceblue;
-    background-color: black;
 }
 
 html {
+    font-size: 62.5%;
 }
 
 .header {
@@ -37,7 +36,8 @@ html {
             ul {
                 display: flex;
                 list-style-type: none;
-                margin: 0
+                margin: 0;
+                font-size: 2rem;
             }
 
             ul li a {
@@ -50,29 +50,37 @@ html {
 }
 
 .details {
+    background-image: linear-gradient(rgba(16, 29, 44, 0.93), rgba(16, 29, 44, 0.93)), url(../images/bck-img.jpg);
+    ;
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
-    background-color: black;
     text-align: center;
-    min-height: 90vh;
     padding-top: 15em;
     color: aliceblue;
+    min-height: 60dvh;
 
     h1 {
-        font-size: 5em;
+        font-size: 6rem;
         font-weight: 700;
         margin-bottom: 20px;
     }
 
     p {
         margin-bottom: 50px;
+        font-size: 2rem;
     }
 
     button {
-        padding: 5px 10px;
-        ;
-        font-size: 1em;
+        padding: .8rem .12rem;
+        width: 15rem;
+        font-size: 1.5rem;
         border-radius: 6px;
         margin-bottom: 50px;
+    }
+
+    h3 {
+        font-size: 2rem;
     }
 
     button:hover {
@@ -95,6 +103,7 @@ html {
     padding: 0 10rem;
     height: 90vh;
     align-items: center;
+    justify-content: center;
 
     .about-session-summary {
         display: flex;
