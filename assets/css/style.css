@@ -1,6 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -8,15 +13,12 @@ html {
 }
 
 .header {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    z-index: 9000;
-    display: block;
+
+
     align-items: center;
     background-color: rgba(28, 25, 25, 0.2);
     border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(12px);
 
     .centered-menu-wrap {
         max-width: 1110px;
@@ -25,20 +27,14 @@ html {
         position: relative;
 
         .main-nav {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            align-items: center;
-            -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-            justify-content: space-between;
 
-            ul {
+
+            /* ul {
                 display: flex;
                 list-style-type: none;
                 margin: 0;
                 font-size: 2rem;
-            }
+            } */
 
             ul li a {
                 padding: 1rem;
@@ -50,21 +46,15 @@ html {
 }
 
 .details {
+
     background-image: linear-gradient(rgba(16, 29, 44, 0.93), rgba(16, 29, 44, 0.93)), url(../images/bck-img.jpg);
     ;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    text-align: center;
-    padding-top: 15em;
-    color: aliceblue;
-    min-height: 60dvh;
 
-    h1 {
-        font-size: 6rem;
-        font-weight: 700;
-        margin-bottom: 20px;
-    }
+
+
 
     p {
         margin-bottom: 50px;
